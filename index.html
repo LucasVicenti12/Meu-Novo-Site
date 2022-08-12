@@ -10,13 +10,10 @@
     </head>
     <header class="header">
         <div class="index-header">
-            <div class="div-home">
-                <h1 class="word-title">Home</h1>
-            </div>
             <div class="div-info">
-                <h1 class="word-title">Projetos</h1>
-                <h1 class="word-title">Sobre</h1>
-                <h1 class="word-title">Contatos</h1>  
+                <h1><a href="#about-me" class="word-title">Sobre</a></h1>
+                <h1><a href="#projects" class="word-title">Projetos</a></h1>
+                <h1><a href="#contacts" class="word-title">Contatos</a></h1>  
             </div> 
         </div>      
     </header>
@@ -36,9 +33,10 @@
                 </div>
             </div>
             <div class="img">
-                <span class="img-perfil"></span>
+                <img src="./assets/perfil.jpeg" alt="perfil" class="img-perfil">
             </div>
         </div>
+        <!-- <div class="img-back"></div> -->
         <div class="div-about">
             <div class="lang-prog">
                 <h1 class="info-text">Web</h1>
@@ -55,12 +53,12 @@
                 <img src="assets/mysql.svg" alt="mysql" class="icon-img">
             </div>
             <div class="more-info">
-                <h1 class="info-text">Sobre mim</h1>
+                <h1 class="info-text" id="about-me">Sobre mim</h1>
                 <h2 class="info-text2">Gspar, SC</h2>
                 <h3 class="informations">Ola, meu nome é Lucas Vicenti, tenho 18 anos, e sou recém formado em técnico em informática pelo IFSC campus Gaspar.
                     Sou amante de programação e estou em busca de trabalhar na área. Não possuo experiência profissional (justamente por estar começando). Porém estou sempre disposto a adquirir novas experiências, e possuo um grande entusiasmo nesta área.</h3>
-                <a href="assets/perfil.jpeg">
-                    <button class="btn">Curriculo</button>
+                <a href="assets/Curriculo - Lucas Vicenti.pdf" target="_blank">
+                    <button class="btn-curriculo">Curriculo</button>
                 </a>
             </div>
         </div>
@@ -83,25 +81,40 @@
             </div>
         </div>
         <div class="div-projects">
-            <h1 class="info-text">Meus Projetos</h1>
+            <h1 class="info-text" id="projects">Meus Projetos</h1>
             <div class="projects">
                 <div class="project">
                     <span class="project-imc"></span>
                     <h3 class="title-project">Aplicativo para calculo de IMC</h3>
                     <p class="desc-project">Aplicativo feito para android com java, utilizando a IDE AndroidStudio. Este aplicativo foi desenvolvido para a realização de um trabalho para a unidade curricular de Programação para Dispositivos Moveis.</p>
                     <p class="tech-project">Técnologias usadas neste projeto: Java e Android Studio</p>
+                    <div class="button-project">
+                        <a href="https://github.com/LucasVicenti12/Aplicativo-IMC" target="_blank">
+                            <button class="btn-project">Acesse este projeto</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="project">
                     <span class="project-note"></span>
                     <h3 class="title-project">Notes Online</h3>
                     <p class="desc-project">Site para criação de notas online, feito para estudo de React e NodeJS</p>
                     <p class="tech-project">Técnologias usadas neste projeto: Html, CSS, JavaSript, React e NodeJS</p>
+                    <div class="button-project">
+                        <a href="https://github.com/LucasVicenti12/Note-ReactJS" target="_blank">
+                            <button class="btn-project">Acesse este projeto</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="project">
                     <span class="project-gatry"></span>
                     <h3 class="title-project">Clone Gatry</h3>
                     <p class="desc-project">Clone do site gatry, fiz este site com intuito de prática e estudo na criação de componentes e criação de API</p>
                     <p class="tech-project">Técnologias usadas neste projeto: Html, CSS, JavaSript, React e NodeJS</p>
+                    <div class="button-project">
+                        <a href="https://github.com/LucasVicenti12/Estudos-ReactJS" target="_blank">
+                            <button class="btn-project">Acesse este projeto</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="project">
                     <span class="project-goodness"></span>
@@ -109,8 +122,16 @@
                     <p class="desc-project">Criação de site que tem como propostra a pluralidade de ideas, onde em forma de blocos os usuarios poderão expressar suas ideias e conversar sobre.</p>
                     <p class="tech-project">Projeto em desenvolvimento...</p>
                     <p class="tech-project">Técnologias usadas neste projeto: Html, CSS, JavaSript, React, NodeJS e MongoDB ou outro banco de dados.</p>
+                    <div class="button-project">
+                        <a href="https://github.com/LucasVicenti12/Good-Idea" target="_blank">
+                            <button class="btn-project">Acesse este projeto</button>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="footer-title">
+            <h1 class="info-text" id="contacts">Contatos</h1>
         </div>
         <div class="contact">
             <div class="person-contacts">

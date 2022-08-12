@@ -11,15 +11,16 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 .index-header{
     display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: flex-end;
 }
-.div-home{
-    width: 40vw;
-    display: flex;
-    justify-content: space-around;
+a{
+    text-decoration: none;
 }
 .div-info{
     width: 55vw;
@@ -31,32 +32,38 @@ body{
     font-family: Arial;
     color: #ffffff;
 }
+.word-title:hover{
+    animation: animation-links 1s forwards;
+}
 .header::after{
     content: '';
     position: absolute;
-    height: 1px;
+    height: 2px;
     width: 100%;
     background-color: #ffffff85;
 }
 .img-perfil{
-    display: block;
-    width: 250px;
-    height: 250px;
-    background-image: url("../assets/perfil.jpeg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border-radius: 50%;
+    margin-top: 10px;
+    width: 18em;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.238);
 }
 .main-info{
     display: flex;
     justify-content: space-around;
-    width: 95vw;
+    width: 100vw;
     padding: 20px;
+    background-image: url("../assets/image3.jpg");
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 .info-text-name{
-    color: #1d7a9c;
+    color: #030e1b;
     font-size: 30px;
     font-family: Arial;
+    animation: animation-title 2s forwards;
 }
 .info-text{
     font-size: 24px;
@@ -68,14 +75,15 @@ body{
     color: #ffffff;
     font-family: Arial;
 }
-.btn{
-    background-color: #06121f;
+.btn, .btn-curriculo{
+    background-color: transparent;
     color: #ffffff;
     padding: 10px;
-    width: 90px;
-    border: 3px solid transparent;
+    width: 100px;
+    border: 4px solid transparent;
     border-image: linear-gradient(to right, #8e00d0, #11457e);
     border-image-slice: 1;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.238);
 }
 .buttons{
     display: flex;
@@ -86,15 +94,10 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.scrolling{
-    color: white;
-    text-align: center;
-    font-family: Arial;
-    font-size: 10px;
-}
 .img{
     display: flex;
     align-items: center;
+    animation: img-perfil 1s forwards;
 }
 .more-info{
     width: 40vw;
@@ -111,9 +114,9 @@ body{
 .div-about::before{
     content: '';
     position: absolute;
-    left: 49vw;
+    left: 48vw;
     width: 2px;
-    height: 40%;
+    height: 18em;
     background-color: #ffffff;
 }
 .informations{
@@ -133,7 +136,9 @@ ul{
 }
 .knoledge{
     display: flex;
-    height: 20vh;
+    height: 15em;
+    margin-top: 5px;
+    align-items: center;
 }
 .div-knoledge{
     display: flex;
@@ -142,7 +147,8 @@ ul{
     margin-top: 50px;
     padding: 20px;
     padding-bottom: 50px;
-    background-color: #040f1b;
+    background-color: #010810;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.238);
 }
 .div-projects{
     display: flex;
@@ -176,6 +182,18 @@ ul{
     background-repeat: no-repeat;
     background-image: url("../assets/img-projects/notes-react.png");
 }
+.project-note:hover{
+    animation: animation-projects 1s forwards;
+}
+.project-gatry:hover{
+    animation: animation-projects 1s forwards;
+}
+.project-goodness:hover{
+    animation: animation-projects 1s forwards;
+}
+.project-imc:hover{
+    animation: animation-projects 1s forwards;
+}
 .project-gatry{
     display: block;
     width: 23vw;
@@ -196,6 +214,10 @@ ul{
 }
 .project{
     width: 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3rem;
 }
 .title-project{
     color: #ffffff;
@@ -205,6 +227,8 @@ ul{
     color: #ffffffa3;
     font-family: Arial;
     font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 .tech-project{
     color: #0082aa;
@@ -216,7 +240,8 @@ ul{
     display: flex;
     padding: 20px;
     justify-content: space-around;
-    background-color: #040f1b;
+    background-color: #010810;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.238);
 }
 .person-contacts, .social-contacts{
     color: #ffffff;
@@ -226,19 +251,114 @@ ul{
     text-decoration: none;
     color: #ffffff;
 }
+.link:hover{
+    animation: animation-links 0.5s forwards;
+}
 .social-contacts{
     display: flex;
     flex-direction: column;
 }
 .footer{
-    background-color: #0c141c;
+    background-color: #09111a;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     color: #ffffff;
     font-family: Arial;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.238);
 }
 .footer h3{
     font-size: 15px;
+    margin-top: 0;
+}
+#contacts{
+    display: flex;
+    justify-content: center;
+}
+#contacts::after{
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 1.4em;
+    height: 1px;
+    width: 7em;
+    background-color: #ffffff;
+}
+.footer-title{
+    background-color: #010810;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@keyframes animation-projects{
+    to{
+        opacity: 0.3;
+    }
+}
+@keyframes animation-links{
+    to{
+        color: #1d7a9c;
+        font-size: 20px;
+    }
+}
+.btn:hover{
+    animation: animation-buttons 1s forwards;
+}
+@keyframes animation-buttons{
+    to{
+        background-color: #041a3982;
+        padding-left: 40px;
+    }
+}
+.btn-curriculo:hover{
+    animation: animation-button-curriculo 1s forwards;
+}
+@keyframes animation-button-curriculo{
+    to{
+        background-color: #dfdfdf58;
+    }
+}
+@keyframes animation-title{
+    from{
+        margin-left: 100px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+@keyframes img-perfil{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.button-project{
+    display: flex;
+    justify-content: center;
+}
+.btn-project{
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #8e00d0, #11457e);
+    border-image-slice: 1;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.238);
+}
+.btn-project:hover{
+    animation: animation-btn-project 2s forwards;
+}
+@keyframes animation-btn-project{
+    to{
+        border-image: linear-gradient(to right, #5cabff, #0e7143);
+        border-image-slice: 1;
+        background-color: #2a586649;
+    }
 }
